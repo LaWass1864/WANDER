@@ -1,0 +1,9 @@
+
+
+//Le role de index.scss est de rassembler tous les fichiers SASS 
+
+@use "./settings";
+@use "./layout/index";
+@use "./layout/nav";
+
+

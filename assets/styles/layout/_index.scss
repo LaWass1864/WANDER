@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-columns: 30% 50% 30%;
+  gap: 30px;
+  position: relative; 
+  .section1 {
+    padding: 60px;
+    background: #959595;
+
+    p {
+      text-align: left;
+      margin-bottom: 30px;
+      text-transform: capitalize;
+
+      i {
+        margin-right: 15px;
+      }
+    }
+
+    h1{
+        font-size: 3rem;
+        text-transform: capitalize;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    span{
+        text-transform: capitalize;
+    }
+  }
+
+  .footer-section{
+    display: flex;
+    justify-content: space-around;
+    background: #000;
+    position: absolute;
+    bottom: 60px;
+  }
+}

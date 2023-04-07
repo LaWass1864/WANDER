@@ -1,0 +1,55 @@
+
+// Couleurs
+$color1: rgb(218, 171, 0);
+$color2: rgb(216, 176, 216);
+$color3: rgb(9, 8, 8);
+$color4: rgb(245, 245, 245);
+
+// mixin
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Réglages généraux
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $color3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  scroll-behavior: smooth;
+color:$color4;
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $color1;
+    animation: animBefore 1.5s ease forwards;
+    animation-delay: 0.15s;
+
+    @keyframes animBefore {
+      to {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(9, 8, 8);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  scroll-behavior: smooth;
+  color: rgb(245, 245, 245);
+}
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(218, 171, 0);
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 50% 30%;
+  gap: 30px;
+  position: relative;
+}
+.container .section1 {
+  padding: 60px;
+  background: #959595;
+}
+.container .section1 p {
+  text-align: left;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.container .section1 p i {
+  margin-right: 15px;
+}
+.container .section1 h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.container .section1 span {
+  text-transform: capitalize;
+}
+.container .footer-section {
+  display: flex;
+  justify-content: space-around;
+  background: #000;
+  position: absolute;
+  bottom: 60px;
+}
+
+nav {
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 30px;
+  background: red;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+nav .logo {
+  color: rgb(249, 249, 6);
+}
+nav .center-menu {
+  width: 40%;
+  margin: 0 auto;
+}/*# sourceMappingURL=index.css.map */
