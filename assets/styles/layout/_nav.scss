@@ -4,8 +4,8 @@ nav {
   grid-template-columns: 10% 80% 10%;
   align-items: center;
   margin: 0 auto;
-  padding: 0 30px;
-  background: red;
+  padding: 0 30px; 
+  max-width: 100%;
 
   ul {
     display: flex;

@@ -4,7 +4,7 @@ $color1: rgb(218, 171, 0);
 $color2: rgb(216, 176, 216);
 $color3: rgb(9, 8, 8);
 $color4: rgb(245, 245, 245);
-
+$color5:rgb(74, 73, 73);
 // mixin
 
 @mixin center {
@@ -21,16 +21,17 @@ $color4: rgb(245, 245, 245);
 }
 
 body {
-  background: $color3;
+   background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height: 100vh;
   scroll-behavior: smooth;
+  width: 100%;
+  
+  
 color:$color4;
   &:before {
     content: "";
     position: absolute;
     height: 100%;
-    width: 100%;
     top: 0;
     left: 0;
     background: $color1;
@@ -52,4 +53,14 @@ li {
 
 button {
   cursor: pointer;
+  background: white;
+  padding: 15px;
+  outline: none;
+  border-radius: 10px;
+  
+  &:hover{
+    transform: translateX(5px);
+    transition: 0.3s;
+    box-shadow:1px 1px 5px rgb(236, 234, 234);
+  }
 }
