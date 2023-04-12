@@ -1,0 +1,21 @@
+
+.button{
+    display: flex;
+    justify-content: center;
+    button {
+      @media screen and (max-width: 980px) {
+        width: 30%;
+      }
+      border-radius: 20px;
+      border: none;
+      text-align: center;
+      width: 5%;
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+

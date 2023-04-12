@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background: url(../img/bg.png);
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  padding: 40px;
+  font-weight: 700;
+  color: rgb(66, 66, 148);
+}
+body div:not(.div1) {
+  color: white;
+}
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(223, 168, 17, 0.253);
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+nav {
+  height: 30%;
+  padding: 30px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: azure;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 4 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 980px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+}
+section div {
+  border-radius: 25px;
+  padding: 15px;
+  box-shadow: rgba(150, 131, 131, 0.35) 0px 5px 15px;
+}
+section div div:not(.div2, .div5) {
+  padding: 0;
+}
+section div div:not(.div2, .div5) {
+  box-shadow: none;
+}
+section div li {
+  font-size: small;
+  font-weight: 300;
+}
+section div li:last-child {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+section .div1 {
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+section .div2 {
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: end;
+  position: relative;
+}
+section .div2 .buy {
+  border-radius: 20px;
+  border: none;
+  width: 7%;
+  padding: 5px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 980px) {
+  section .div2 .buy {
+    width: 30%;
+  }
+}
+section .div2 .buy:hover {
+  transform: scale(1.2);
+}
+section .div3 {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+section .div4 {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+section .div5 {
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: end;
+  position: relative;
+}
+section .div5 .buy {
+  border-radius: 20px;
+  border: none;
+  width: 7%;
+  padding: 5px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 980px) {
+  section .div5 .buy {
+    width: 30%;
+  }
+}
+section .div5 .buy:hover {
+  transform: scale(1.2);
+}
+section .div6 {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+section .div7 {
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+}
+section .div8 {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+.button button {
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width: 980px) {
+  .button button {
+    width: 30%;
+  }
+}
+
+footer {
+  padding: 10px;
+  margin-top: 10px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer li {
+  font-size: 2rem;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */
